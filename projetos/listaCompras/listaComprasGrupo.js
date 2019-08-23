@@ -18,7 +18,7 @@ bot.start(async ctx => {
   await ctx.reply(`Seja Bem vindo, ${name}!`)
   await ctx.reply('Escreva os itens que voce deseja adicionar...')
 })
-
+ 
 bot.use((ctx, next) => {
   const chatId = ctx.chat.id
   if (!dados.hasOwnProperty(chatId)) dados[chatId] = []
