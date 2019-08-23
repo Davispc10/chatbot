@@ -39,4 +39,6 @@ bot.action(/delete (.+)/, ctx => {
   ctx.reply(`${ctx.match[1]} deletado!`, gerarBotoes(ctx.itens))
 })
 
-bot.startPolling()
+//bot.startPolling()
+
+module.exports = bot
